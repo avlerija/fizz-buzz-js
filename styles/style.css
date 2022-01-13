@@ -1,0 +1,254 @@
+
+body {
+    margin: 30px;
+    font-family: Bodoni MT;
+    font-weight: bolder;
+    background-color: white;
+    align-content: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+#results {
+    display: grid;
+    grid-template-columns: repeat(10, 150px);
+    grid-template-rows: repeat (10, 100px); 
+    grid-row-gap: 50px;
+}
+
+.controls {
+    display: grid;
+    grid-template-columns: repeat(5, 300px);
+    width: auto;
+    margin-left: 80px;
+    margin-top: 50px;
+    grid-column-gap: 2em;
+    padding-bottom: 30px;
+
+}
+
+#Minimumvalue {
+    width: 50px;
+    height: 100%;
+    border: solid;
+    border-radius: 10px;
+}
+#Maximumvalue {
+    width: 50px;
+    height: 100%;
+    border: solid;
+    border-radius: 10px;
+}
+
+#Fizzvalue {
+    width: 50px;
+    height: 100%;
+    border: solid;
+    border-radius: 10px;
+}
+
+#Buzzvalue {
+    width: 50px;
+    height: 100%;
+    border: solid;
+    border-radius: 10px;
+}
+
+.color-controls {
+    display: grid;
+    grid-template-columns: repeat(5, 215px);
+    width: auto;
+    margin-left: 80px;
+    margin-bottom: 30px;
+    grid-column-gap: 2em;
+    padding: 30px;
+
+}
+
+.Buzz {
+    display: grid;
+    width: 100px;
+    height: 100px;
+    color: white;
+    background-color: #643845;
+    border-radius: 10px;
+    border-style: dashed;
+    justify-content: center;
+    align-items: center;
+}
+
+.Fizz {
+    display: grid;
+    width: 100px;
+    height: 100px;
+    color: white;
+    background-color: #E83845;
+    border-radius: 10px;
+    border-style: dotted;
+    justify-content: center;
+    align-items: center;
+}
+
+.FizzBuzz {
+    display: grid;
+    width: 100px;
+    height: 100px;
+    color: black;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border-style: solid;
+    justify-content: center;
+    align-items: center;
+}
+
+.None {
+    display: grid;
+    width: 100px;
+    height: 100px;
+    color: black;
+    background-color: #e7cece;
+    border-radius: 10px;
+    border-style: double;
+    justify-content: center;
+    align-items: center;
+}
+
+.interaction {
+    display: grid;
+    grid-template-columns: repeat(5, 250px);
+    width: auto;
+    margin-left: 80px;
+    grid-column-gap: 2em;
+}
+
+#btnGen {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 15px; 
+}
+
+#btnCl {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 15px; 
+}
+
+#btnFizz {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 15px; 
+} 
+
+#btnBuzz {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 15px; 
+}
+
+#btnFib {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 15px; 
+}
+
+#btnGen:hover {
+    background-color: black;
+    color: white;
+}
+#btnCl:hover {
+    background-color:#e7cece;
+    color: black;
+}
+#btnFizz:hover {
+    background-color: #E83845;
+    color: white;
+}
+
+#btnBuzz:hover {
+    background-color: #643845;
+    color: white;
+}
+
+#btnFib:hover {
+    background-color: #f50818;
+    color: white;
+    border-color: white;
+    border-style: dotted;
+}
+
+@media (max-width: 992px) {
+    /* #nav {
+        width: 500px;
+        height: 100%;
+        margin : auto;
+    } */
+
+    .controls {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 2em;
+    }
+    .color-controls {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 2em;
+        padding: 0;
+        margin-top: 25px;
+    }
+
+    .interaction {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 2em;
+    }
+
+    #results {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: (20, 100px);
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .color-controls{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .interaction {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    #results {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(20, 1fr);
+
+    }
+
+}
+

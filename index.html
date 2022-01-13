@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <title>JavaScript Project</title>
+</head>
+<body>
+    <main id = "nav">
+        <div>
+            <h1>FizzBuzz Challenge: Javascript</h1>
+        </div>
+
+        <div class = "controls">
+            <label> <span>Minimum value: </span> <input id = "Minimumvalue" type="number" name="min" value="1"> </label>
+            <label> <span>Maximum value: </span> <input id="Maximumvalue"type="number" name="max" value="100"> </label>
+            <label> <span>Enter 'Fizz' value: </span> <input id = "Fizzvalue" type="number" name="fizz" value="3"> </label>
+            <label> <span>Enter 'Buzz' value: </span> <input id = "Buzzvalue" type= "number" name="buzz" value = "5"> </label>
+        </div>
+
+        <div class = "color-controls">
+            <label><span> Default 'Fizz' color: </span><input id = "fizzCol" type="color" value="#E83845"></label>
+            <label><span> Default 'Buzz' color: </span><input id="buzzCol" type="color" value="#643845"></label>
+            <label><span> Default 'FizzBuzz' color: </span><input id = "fibuCol" type="color" value="#FFFFFF"></label>
+            <label><span> Default 'None' color: </span><input id = "default" type= "color" value = "#b0b0b0"></label>
+        </div>
+
+        <div class = "interaction">
+            <button id="btnGen">Generate</button>
+            <button id="btnCl">Clear</button>
+            <button id="btnFizz">Fizz</button>
+            <button id="btnBuzz">Buzz</button>
+            <button id="btnFib">FizzBuzz</button>
+        </div>
+
+        <div>
+            <h2> Generated results: </h2>
+        </div>
+
+        <div id = "results"> 
+
+        </div>
+
+    </main>
+</body>
+</html>
