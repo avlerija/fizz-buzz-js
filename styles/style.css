@@ -1,7 +1,7 @@
 
 body {
     margin: 30px;
-    font-family: Bodoni MT;
+    font-family: "Bodoni MT";
     font-weight: bolder;
     background-color: white;
     align-content: center;
@@ -14,7 +14,7 @@ h1 {
 #results {
     display: grid;
     grid-template-columns: repeat(10, 150px);
-    grid-template-rows: repeat (10, 100px); 
+    grid-template-rows: repeat(10, 100px); 
     grid-row-gap: 50px;
 }
 
@@ -194,11 +194,6 @@ h1 {
 }
 
 @media (max-width: 992px) {
-    /* #nav {
-        width: 500px;
-        height: 100%;
-        margin : auto;
-    } */
 
     .controls {
         display: grid;
@@ -225,7 +220,7 @@ h1 {
     #results {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: (20, 100px);
+        grid-template-rows: repeat(20, 100px);
     }
 
 }
