@@ -4,8 +4,6 @@ const resultValues = document.getElementById ("results");
 
 function fizzbuzz () {
     listenIt();
-
-    // const document.getElementById ("results"); 
     
     var fibuButton = document.getElementById ("btnFib");
     fibuButton.addEventListener ("click", pressColor1);
