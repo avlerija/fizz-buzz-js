@@ -15,17 +15,17 @@
         </div>
 
         <div class = "controls">
-            <label> <span>Minimum value: </span> <input id = "Minimumvalue" type="number" name="min" value="1"> </label>
-            <label> <span>Maximum value: </span> <input id="Maximumvalue"type="number" name="max" value="100"> </label>
-            <label> <span>Enter 'Fizz' value: </span> <input id = "Fizzvalue" type="number" name="fizz" value="3"> </label>
-            <label> <span>Enter 'Buzz' value: </span> <input id = "Buzzvalue" type= "number" name="buzz" value = "5"> </label>
+            <label> <span>Minimum value: </span> <input id = "Minimumvalue" type="number" name="min" value="1" min="1" max="100"> </label>
+            <label> <span>Maximum value: </span> <input id="Maximumvalue"type="number" name="max" value="100" min="1" max = "100"> </label>
+            <label> <span>'Fizz' value: </span> <input id = "Fizzvalue" type="number" name="fizz" value="3"> </label>
+            <label> <span>'Buzz' value: </span> <input id = "Buzzvalue" type= "number" name="buzz" value = "5"> </label>
         </div>
 
         <div class = "color-controls">
-            <label><span> Default 'Fizz' color: </span><input id = "fizzCol" type="color" value="#E83845"></label>
-            <label><span> Default 'Buzz' color: </span><input id="buzzCol" type="color" value="#643845"></label>
-            <label><span> Default 'FizzBuzz' color: </span><input id = "fibuCol" type="color" value="#FFFFFF"></label>
-            <label><span> Default 'None' color: </span><input id = "default" type= "color" value = "#b0b0b0"></label>
+            <label id = "fizzCol" > </label>
+            <label id="buzzCol"> </label>
+            <label id = "fibuCol"> </label>
+            <label id = "default"> </label>
         </div>
 
         <div class = "interaction">
