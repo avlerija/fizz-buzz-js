@@ -1,21 +1,11 @@
 console.log ('Lets write the script'); 
 
-// var minVal = document.getElementById('Minimumvalue').value;
-// var maxVal = document.getElementById('Maximumvalue').value;   
-// var fizzVal = document.getElementById('Fizzvalue').value;
-// var buzzVal = document.getElementById('Buzzvalue').value;
-// var fizzClr = document.getElementById('fizzCol').value;
-// var buzzClr = document.getElementById('buzzCol').value;
-// var fibuClr = document.getElementById('fibuCol').value;
-// var defaultClr = document.getElementById('default').value;
-
-// minVal.value = 1;
-// maxVal.value = 100;
+const resultValues = document.getElementById ("results"); 
 
 function fizzbuzz () {
     listenIt();
 
-    document.getElementById ("results"); 
+    // const document.getElementById ("results"); 
     
     var fibuButton = document.getElementById ("btnFib");
     fibuButton.addEventListener ("click", pressColor1);
@@ -32,8 +22,8 @@ function fizzbuzz () {
 }
 
 function makeIt () {
-    while (results.firstChild)
-    results.removeChild (results.firstChild);
+    while (resultValues.firstChild)
+    resultValues.removeChild (resultValues.firstChild);
 }
 
 function pressGenerate () {
@@ -41,7 +31,7 @@ function pressGenerate () {
         for (let i =1; i<101; i++) {
             const newDiv = document.createElement ('div');
             newDiv.className = "item" + i;
-            results.appendChild(newDiv); 
+            resultValues.appendChild(newDiv); 
                 
                 if (i% 5 === 0 && i % 3 !== 0) {
                     newDiv.setAttribute ("id", "item" + i);
@@ -77,7 +67,7 @@ function pressColor1 () {
     for (minVal; minVal<=maxVal; minVal++) {
     const newEl = document.createElement ('div');
     newEl.id= "item" + minVal;
-    results.appendChild(newEl);
+    resultValues.appendChild(newEl);
 
         if (minVal % fizzVal === 0 && minVal % buzzVal === 0) {
         newEl.setAttribute ("id", "item" + minVal);
@@ -99,7 +89,7 @@ function pressColor2 () {
     for (minVal; minVal<=maxVal; minVal++) {
     const newEl2 = document.createElement ('div');
     newEl2.id= "item" + minVal;
-    results.appendChild(newEl2); 
+    resultValues.appendChild(newEl2); 
 
         if (minVal % fizzVal === 0 && minVal % buzzVal !==0) {
         newEl2.setAttribute ("id", "item" + minVal);
@@ -121,9 +111,9 @@ function pressColor3 () {
     for (minVal; minVal<=maxVal; minVal++) {
     const newEl3 = document.createElement ('div');
     newEl3.id= "item" + minVal;
-    results.appendChild(newEl3);
+    resultValues.appendChild(newEl3);
 
-        if (minVal % fizzVal !==0 && minVal & buzzVal !== 0) {
+        if (minVal % fizzVal !==0 && minVal % buzzVal !== 0) {
         newEl3.setAttribute ("id", "item" + minVal);
         newEl3.setAttribute ("class", "None");
         newEl3.innerText = minVal; 
@@ -143,7 +133,7 @@ function pressColor4 () {
     for (minVal; minVal<=maxVal; minVal++) {
     const newEl4 = document.createElement ('div');
     newEl4.id= "item" + minVal;
-    results.appendChild(newEl4);
+    resultValues.appendChild(newEl4);
 
         if (minVal % buzzVal === 0 && minVal % fizzVal !==0) {
         newEl4.setAttribute ("id", "item" + minVal);
